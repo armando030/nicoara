@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sora:wght@100..800&display=swap');
+
+.h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.nav{
+    padding: 0% 10% 0% 10%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+    gap: 16px;
+}
+
+.nav__option {
+    font-family: 'Sora', sans-serif;
+    font-size: 1em;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #333;
+    font-weight: bold;
+    justify-content: center;
+    border: 3px solid #333;
+    border-radius: 50px;
+    padding: 8px 16px;
+    width: 250px;
+    height: 20px;
+}
+
+.main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    padding: 20px 20px 20px 20px;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    border: #333 solid 2px;
+}
+
+.main__img {
+    border: 5px solid #333;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.main__text {
+    font-family: 'Righteous', cursive;
+    color: #333;
+    max-width: 50%;
+    gap: 30px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-family: "righteous", cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;  
+}
+
+.social__icon {
+    font-family: 'Righteous', sans-serif;
+    font-size: 0em;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+    
+}
+
+img:broken, img:not([src]), img[src=""] {
+    display: none;
+}
