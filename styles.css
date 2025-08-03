@@ -1,19 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sora:wght@100..800&display=swap');
 
+:root {
+    --background-color: rgba(218, 26, 218, 0);
+    --secondary-color: #FFF1D6;
+    --font-family: 'Sora', sans-serif;
+}
+
 .h1{
     text-align: center;
     font-size: 2.5em;
-    color: #333;
+    color: var(--background-color);
     margin-top: 20px;
 }
 
 .nav{
-    padding: 0% 10% 0% 10%;
+    padding: 0% 10% 3% 10%;
     display: flex;
     flex-direction: row;
     align-content: space-around;
     justify-content: center;
     gap: 16px;
+    margin-bottom: 50px;
+    border-bottom: var(--secondary-color) dotted 8px;
 }
 
 .nav__option {
@@ -22,46 +30,60 @@
     display: flex;
     text-decoration: none;
     align-items: center;
-    color: #333;
+    color: #E89356;
+    background-color: var(--secondary-color);
     font-weight: bold;
     justify-content: center;
-    border: 3px solid #333;
     border-radius: 50px;
     padding: 8px 16px;
     width: 250px;
-    height: 20px;
+    height: 30px;
+}
+
+.container {
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
 }
 
 .main{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: row;
     align-items: space-between;
     justify-content: center;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 10px 10px 10px;
     padding: 20px 20px 20px 20px;
-    gap: 40px;
-    width: 100%;
-    max-width: 1200px;
-    border: #333 solid 2px;
+    gap: 4rem;
 }
 
-.main__img {
-    border: 5px solid #333;
-    border-radius: 10px;
-    width: 30%;
-}
+    .main__img {
+        border: 8px solid var(--secondary-color);
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 10px 10px 10px;
+    }
 
-.main__text {
-    font-family: 'Righteous', cursive;
-    color: #333;
-    max-width: 50%;
-    gap: 30px;
-    text-align: center;
-}
+    .main__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
+    
+    .main__text {
+        font-family: 'Righteous', cursive;
+        color: #333;
+        width: 300px;
+        gap: 30px;
+        text-align: center;
+        margin: 10px 10px 10px 10px;   
+    }
 
 .social {
     display: flex;
@@ -91,6 +113,22 @@
     
 }
 
+.footer {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    text-align: center;
+    padding: 1em;
+    border-top:var(--secondary-color) dotted 8px;
+    font-family: 'Sora', sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    background-color: var(--background-color);
+}
+
 img:broken, img:not([src]), img[src=""] {
     display: none;
 }
+
