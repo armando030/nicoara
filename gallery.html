@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>galery</title>
+    <title>gallery</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="./img/favicon.png">
 </head>
 <body>
     <header>
-        <h1 class="h1">NicoAra</h1>
+        <h1 class="globalTitle" id="h1">NICO<span id="main__text__title_color" >ARA</span></h1>
         <nav class="nav">
             <a class="nav__option" href="index.html">Home</a>
             <a class="nav__option" href="about.html">About</a>
-            <a class="nav__option" href="galery.html">Gallery</a>
+            <a class="nav__option" href="gallery.html">Gallery</a>
             <a class="nav__option" href="commissions.html">Commissions</a>
             <a class="nav__option" href="contact.html">Contact</a>
         </nav>
     </header>
     <main>
-        <h1 class="h1">Gallery</h1>
-        <section id="emotes" class="gallery" style="display: none;">
-            <h2 class="gallery__title">Emotes</h2>
-            <p class="gallery__text">Here you can find a selection of my recent works.</p>
+        <h1 class="globalTitle" id="main__text__title">Gall<span id="main__text__title_color">ery</span></h1>
+        <ul id="gallery__menu" class="nav">
+            <a id="galleryButton" class="nav__option" onclick="showSection('emotes','emoteContent')">Emotes </a>
+            <a id="galleryButton" class="nav__option" onclick="showSection('animated_emotes','emoteContent')">Animated Emotes</a>
+        </ul>
+        <section id="emotes" class="emoteContent" style="display: none;">
+            <h2 class="globalSubtitle">Emotes</h2>
+            <p class="globalText">Here you can find a selection of my recent works.</p>
             <div class="gallery__images">
                 <img src="./assets/gallery/emotes_1.png" alt="Emote_1" class="gallery__image">
                 <img src="./assets/gallery/emotes_2.png" alt="Emote_1" class="gallery__image">
@@ -44,9 +48,9 @@
                 <img src="./assets/gallery/emotes_18.png" alt="Emote_1" class="gallery__image">
             </div>
         </section>
-        <section id="animated_emotes" class="gallery">
-            <h2 class="gallery__title">Animated Emotes</h2>
-            <p class="gallery__text">Here you can find a selection of my recent works.</p>
+        <section id="animated_emotes" class="emoteContent" style="display: none;">
+            <h2 class="globalSubtitle">Animated Emotes</h2>
+            <p class="globalText">Here you can find a selection of my recent works.</p>
             <div class="gallery__images">
                 <img src="./assets/gallery/animated_emotes_1.gif" alt="Emote_1" class="gallery__image">
                 <img src="./assets/gallery/animated_emotes_2.gif" alt="Emote_1" class="gallery__image">
@@ -68,6 +72,7 @@
                 <img src="./assets/gallery/animated_emotes_18.gif" alt="Emote_1" class="gallery__image">
             </div>
         </section>
-    </main> 
+    </main>
+    <script src="app.js"></script> 
 </body>
 </html>
