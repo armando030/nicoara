@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1 class="globalTitle" id="h1">NICO<span id="main__text__title_color" >ARA</span></h1>
+        <h1 class="globalTitle" id="h1">Gall<span id="main__text__title_color" >ery</span></h1>
         <nav class="nav">
             <a class="nav__option" href="index.html">Home</a>
             <a class="nav__option" href="about.html">About</a>
@@ -19,14 +19,13 @@
         </nav>
     </header>
     <main>
-        <h1 class="globalTitle" id="main__text__title">Gall<span id="main__text__title_color">ery</span></h1>
-        <ul id="gallery__menu" class="nav">
+        <nav id="gallery__menu" class="nav">
             <a id="galleryButton" class="nav__option" onclick="showSection('emotes','emoteContent')">Emotes </a>
             <a id="galleryButton" class="nav__option" onclick="showSection('animated_emotes','emoteContent')">Animated Emotes</a>
-        </ul>
-        <section id="emotes" class="emoteContent" style="display: none;">
+            <a id="galleryButton" class="nav__option" onclick="showSection('badges','emoteContent')">Badges</a>
+        </nav>
+        <section id="emotes" class="emoteContent" style="display: flex;">
             <h2 class="globalSubtitle">Emotes</h2>
-            <p class="globalText">Here you can find a selection of my recent works.</p>
             <div class="gallery__images">
                 <img src="./assets/gallery/emotes_1.png" alt="Emote_1" class="gallery__image">
                 <img src="./assets/gallery/emotes_2.png" alt="Emote_1" class="gallery__image">
@@ -50,7 +49,6 @@
         </section>
         <section id="animated_emotes" class="emoteContent" style="display: none;">
             <h2 class="globalSubtitle">Animated Emotes</h2>
-            <p class="globalText">Here you can find a selection of my recent works.</p>
             <div class="gallery__images">
                 <img src="./assets/gallery/animated_emotes_1.gif" alt="Emote_1" class="gallery__image">
                 <img src="./assets/gallery/animated_emotes_2.gif" alt="Emote_1" class="gallery__image">
@@ -72,6 +70,87 @@
                 <img src="./assets/gallery/animated_emotes_18.gif" alt="Emote_1" class="gallery__image">
             </div>
         </section>
+        <section id="badges" class="emoteContent" style="display: none;">
+            <h2 class="globalSubtitle">Badges</h2>
+            <div class="gallery__images">
+                <img src="./assets/gallery/badges_1.png" alt="Badge_1" class="gallery__image">
+                <img src="./assets/gallery/badges_2.png" alt="Badge_2" class="gallery__image">
+                <img src="./assets/gallery/badges_3.png" alt="Badge_3" class="gallery__image">
+                <img src="./assets/gallery/badges_4.png" alt="Badge_4" class="gallery__image">
+                <img src="./assets/gallery/badges_5.png" alt="Badge_5" class="gallery__image">
+                <img src="./assets/gallery/badges_6.png" alt="Badge_6" class="gallery__image">
+                <img src="./assets/gallery/badges_7.png" alt="Badge_7" class="gallery__image">
+                <img src="./assets/gallery/badges_8.png" alt="Badge_8" class="gallery__image">
+                <img src="./assets/gallery/badges_9.png" alt="Badge_9" class="gallery__image">
+                <img src="./assets/gallery/badges_10.png" alt="Badge_10" class="gallery__image">
+                <img src="./assets/gallery/badges_11.png" alt="Badge_11" class="gallery__image">
+                <img src="./assets/gallery/badges_12.png" alt="Badge_12" class="gallery__image">
+                <img src="./assets/gallery/badges_13.png" alt="Badge_13" class="gallery__image">
+                <img src="./assets/gallery/badges_14.png" alt="Badge_14" class="gallery__image">
+                <img src="./assets/gallery/badges_15.png" alt="Badge_15" class="gallery__image">
+                <img src="./assets/gallery/badges_16.png" alt="Badge_16" class="gallery__image">
+                <img src="./assets/gallery/badges_17.png" alt="Badge_17" class="gallery__image">
+                <img src="./assets/gallery/badges_18.png" alt="Badge_18" class="gallery__image">
+                <img src="./assets/gallery/badges_19.png" alt="Badge_19" class="gallery__image">
+                <img src="./assets/gallery/badges_20.png" alt="Badge_20" class="gallery__image">
+                <img src="./assets/gallery/badges_21.png" alt="Badge_21" class="gallery__image">
+                <img src="./assets/gallery/badges_22.png" alt="Badge_22" class="gallery__image">
+            </div>
+        </section>
+        <ul id="gallery__menu" class="nav">
+            <a id="galleryButton" class="nav__option" onclick="showSection('alerts','streamContent')">Alerts</a>
+            <a id="galleryButton" class="nav__option" onclick="showSection('panels','streamContent')">Panels</a>
+            <a id="galleryButton" class="nav__option" onclick="showSection('scenes','streamContent')">Scenes</a>
+            <a id="galleryButton" class="nav__option" onclick="showSection('banners','streamContent')">Banners</a>
+        </ul>
+            <section id="alerts" class="streamContent" style="display: flex;">
+            <h2 class="globalSubtitle">Alerts</h2>
+            <div class="gallery__images">
+                <img src="./assets/gallery/alert_(1).gif" alt="Alert_1" class="gallery__image">
+                <img src="./assets/gallery/alert_(2).gif" alt="Alert_2" class="gallery__image">
+                <img src="./assets/gallery/alert_(3).gif" alt="Alert_3" class="gallery__image">
+                <img src="./assets/gallery/alert_(4).gif" alt="Alert_4" class="gallery__image">
+                <img src="./assets/gallery/alert_(5).gif" alt="Alert_5" class="gallery__image">
+            </div>
+            </section>
+            <section id="panels" class="streamContent" style="display: none;">
+            <h2 class="globalSubtitle">Panels</h2>
+            <div class="gallery__images">
+                <img src="./assets/gallery/panel_1.jpg" alt="Panel_1" class="gallery__image">
+                <img src="./assets/gallery/panel_2.png" alt="Panel_2" class="gallery__image">
+                <img src="./assets/gallery/panel_3.png" alt="Panel_3" class="gallery__image">
+            </div>
+            </section>
+            <section id="scenes" class="streamContent" style="display: none;">
+            <h2 class="globalSubtitle">Scenes</h2>
+            <div class="gallery__images">
+                <img src="./assets/gallery/scene_1.gif" alt="Scene_1" class="gallery__image">
+                <img src="./assets/gallery/scene_2.jpg" alt="Scene_2" class="gallery__image">
+                <img src="./assets/gallery/scene_3.gif" alt="Scene_3" class="gallery__image">
+                <img src="./assets/gallery/scene_4.jpg" alt="Scene_4" class="gallery__image">
+            </div>
+            </section>
+            <section id="banners" class="streamContent" style="display: none;">
+            <h2 class="globalSubtitle">Banners</h2>
+            <div class="gallery__images">
+                <img src="./assets/gallery/banner_1.jpg" alt="Banner_1" class="gallery__image">
+                <img src="./assets/gallery/banner_2.png" alt="Banner_2" class="gallery__image">
+                <img src="./assets/gallery/banner_3.jpg" alt="Banner_3" class="gallery__image">
+                <img src="./assets/gallery/banner_4.jpg" alt="Banner_4" class="gallery__image">
+                <img src="./assets/gallery/banner_5.jpg" alt="Banner_5" class="gallery__image">
+            </div>
+            </section>
+        <ul id="gallery__menu" class="nav">
+            <a id="galleryButton" class="nav__option" onclick="showSection('pngtubers','pngtubersContent')">PNGTubers</a>
+        </ul>
+            <section id="pngtubers" class="pngtubersContent" style="display: flex;">
+            <h2 class="globalSubtitle">PNGTubers</h2>
+            <div class="gallery__images">
+                <img src="./assets/gallery/pngtuber_1.jpg" alt="Pngtuber_1" class="gallery__image">
+                <img src="./assets/gallery/pngtuber_2.jpg" alt="Pngtuber_2" class="gallery__image">
+                <img src="./assets/gallery/pngtuber_3.jpg" alt="Pngtuber_3" class="gallery__image">
+                <img src="./assets/gallery/pngtuber_4.jpg" alt="Pngtuber_4" class="gallery__image">
+
     </main>
     <script src="app.js"></script> 
 </body>

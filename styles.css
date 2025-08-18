@@ -7,8 +7,12 @@
     --title-primary-color: #F8C7D4;
     --title-secondary-color: #C3E7F9;
     --font-family: 'Sora', sans-serif;
+    --font-family-cursive: 'Righteous', cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 /* Global Styles */
 
@@ -52,8 +56,8 @@
     align-content: space-around;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 50px;
     border-bottom: var(--secondary-color) dotted 8px;
+    
 }
 
 .nav__option {
@@ -195,7 +199,6 @@ img:broken, img:not([src]), img[src=""] {
 
 @media (max-width: 680px) {
     .main {
-
         flex-direction: column;
         align-items: center;
         gap: 10px;
@@ -246,28 +249,92 @@ img:broken, img:not([src]), img[src=""] {
 
 /* Comissions - Gallery */
 
-.commissions__list {
-    width: 1200px;
-    height: 500px;
-    display: grid;
-    grid-template: auto;
+
+
+#mainCommissions, #mainShop {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0px;
+    justify-content: center;
+    padding: 5%;
+}
+
+#h2Comissions {
+    padding: 20px;
+    letter-spacing: 0.3rem;
+    margin: 0px;
+}
+
+.commissions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.commissions__list {
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 2fr)) ;
+    align-items: center;
 }
 
 .commissions__list__element {
-    width: 50%;
-    text-decoration: none;
-    align-items: center;
-    gap: 10px;
-    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: var(--secondary-color);
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.commissions__list__element div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.commissions__list__element img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 25px;
+    border: 5px solid var(--background-color);
+}
+
+.commissions__list__element img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;       
+}
+
+
+#commissionsTitle {
+    font-size: 2rem;
+    padding: 10px;
+    margin: 0px;
+    letter-spacing: normal;
+}
+
+#commissionsSubtitle {
+    font-size: 1.5rem;
+    padding: 1px;
+    margin: 2px;
+}
+
+#commissionsText {
+    font-size: 1rem;
+    padding: 1px;
+    margin: 0;
 }
 
 
 /* Gallery */
-
 
 .social__icons a:hover{
     transform: scale(1.1);
@@ -280,9 +347,12 @@ img:broken, img:not([src]), img[src=""] {
     transition: transform 0.3s ease;
     background-color: var(--primary-color);
     color: var(--background-color);
+    cursor: pointer;
 }
 
-.nav a.active{
+.nav a:active{
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
     background-color: var(--primary-color);
     color: var(--background-color);
 }
@@ -310,14 +380,80 @@ img:broken, img:not([src]), img[src=""] {
     border-radius: 5px;
 }
 
-#gallery__menu {
+#gallery__menu, #comissionNav {
     border-bottom: 0px ;
+    padding: 25px;
 }
 
-#emotes, #animated_emotes {
+.streamContent, .emoteContent, .pngtubersContent {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
+    scroll-margin-top: 25vh;
 }
+
+#badges img {
+    width: 75px;
+    height: 75px;
+}
+#badges div {
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+}
+
+#alerts img {
+    width: auto;
+    height: 200px;
+}
+
+#alerts div {
+    max-width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+}
+
+#panels img {
+    width: auto;
+    height: 150px;
+}
+
+#panels div {
+    max-width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+}
+
+#scenes img {
+    width: auto;
+    height: 200px;
+}
+
+#scenes div {
+    max-width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+}
+
+#banners img {
+    width: auto;
+    height: 150px;
+}
+
+#banners div {
+    max-width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    justify-items: center;
+}
+
+#pngtubers img {
+    width: auto;
+    height: 350px;
+}
+
+#pngtubers div {
+    max-width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+}
+

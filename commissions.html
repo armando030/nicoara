@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1 class="h1">NicoAra</h1>
+        <h1 class="globalTitle" id="h1">Commi<span id="main__text__title_color">ssions</span></h1>
         <nav class="nav">
             <a class="nav__option" href="index.html">Home</a>
             <a class="nav__option" href="about.html">About</a>
@@ -19,18 +19,97 @@
         </nav>
     </header>
     <main>
-        <h1 class="h1">Commissions</h1>
-        <section class="commissions">
-            <p class="commissions__text">Please read the terms of service before commissioning</p> 
+        <section id="mainCommissions" class="commissionSection" style="display: flex;">
+            <h2 id="h2Comissions" class="globalTitle">Digital Assets</h2>
+            <nav class="nav" id="comissionNav">
+                <a class="nav__option" id="commissionsButton" onclick="showSection('mainShop','commissionSection')">Shops</a>
+            </nav>
+            <section class="commissions">
+            <p id="tos" class="globalText" >Please read the terms of service before commissioning</p> 
                 <div class="commissions__list">
-                    <a class="commissions__list__element">Emotes</a>
-                    <a class="commissions__list__element">Illustrations</a>
-                    <a class="commissions__list__element">PNGTubers</a>
-                    <a class="commissions__list__element">For Streams</a>
-                    <a class="commissions__list__element">YCH</a>
+                    <a class="commissions__list__element">
+                            <img src="./assets/gallery/emotes_4.png" class="commissions__list__element__img" alt="commissions" onclick="location.href='./gallery.html#emotes'">                        
+                        <div>
+                            <h3 class="globalTitle" id="commissionsTitle">Custom Commissions</h3>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Emotes</p>
+                            <p class="globalText" id="commissionsText">10$ Each</p>   
+                            <p class="globalSubtitle" id="commissionsSubtitle">Animated Emotes</p>
+                            <p class="globalText" id="commissionsText">25$ Base Price</p>   
+                            <p class="globalSubtitle" id="commissionsSubtitle">Badges</p>
+                            <p class="globalText" id="commissionsText">15$ Each Original Base</p>
+                            <p class="globalText" id="commissionsText">10$ Each Recolor</p>   
+                        </div>
+                    </a>
+                    <a class="commissions__list__element">
+                        <img class="commissions__list__element__img" src="./assets/gallery/emotes_4.png" alt="illustrations" onclick="location.href='./gallery.html#emotes'">
+                        <div>
+                            <h3 class="globalTitle" id="commissionsTitle">Illustrations</h3>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Shoulders Up/Headshot</p>
+                            <p class="globalText" id="commissionsText">15$ Base Price</p>   
+                            <p class="globalSubtitle" id="commissionsSubtitle">Half Body</p>
+                            <p class="globalText" id="commissionsText">25$ Base Price</p>   
+                            <p class="globalSubtitle" id="commissionsSubtitle">Full Body</p>
+                            <p class="globalText" id="commissionsText">35$ Base Price</p>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Addons</p>  
+                            <p class="globalText" id="commissionsText">20$ Extra Character</p>
+                            <p class="globalText" id="commissionsText">20$ Detailed Background</p>
+                            <p class="globalText" id="commissionsText">10$ Simple Background</p> 
+                        </div> 
+                    </a>
+                    <a class="commissions__list__element">
+                        <div>
+                            <img  src="./assets/gallery/pngtuber_1.jpg" alt="pngtuber" onclick="location.href='./gallery.html#pngtubers'">
+                        
+                        </div>
+                        <div>
+                            <h3 class="globalTitle" id="commissionsTitle">PNGTubers</h3>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Custom Orders</p>
+                            <p class="globalText" id="commissionsText">35$ Base Price</p>   
+                            <p class="globalSubtitle" id="commissionsSubtitle">Price may increase depending on</p>
+                            <p class="globalText" id="commissionsText">Posing</p>
+                            <p class="globalText" id="commissionsText">Expressions</p>
+                            <p class="globalText" id="commissionsText">Caracter Desing</p>   
+                        </div>
+                    </a>
+                    <a class="commissions__list__element">
+                        <img class="commissions__list__element__img" src="./assets/gallery/alert_(5).gif" alt="alert" onclick="location.href='./gallery.html#alerts'">
+                        <div>
+                            <h3 class="globalTitle" id="commissionsTitle">For Streamers</h3>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Alerts</p>
+                            <p class="globalText" id="commissionsText">30$ Each - Simple Animation</p>
+                            <p class="globalText" id="commissionsText">60$ Each - Detailed Animation</p>   
+                            <p class="globalSubtitle" id="commissionsSubtitle">Panels</p>
+                            <p class="globalText" id="commissionsText">15$ Base Price - Custom Panel Desing</p>
+                            <p class="globalText" id="commissionsText">+10$ to add Chibbi</p>   
+                            <p class="globalSubtitle" id="commissionsSubtitle">Scenes</p>
+                            <p class="globalText" id="commissionsText">Ask for pricing</p>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Banners</p>   
+                            <p class="globalText" id="commissionsText">Ask for pricing</p>   
+                        </div>
+                    </a>
+                    <a class="commissions__list__element">
+                        <img class="commissions__list__element__img" src="./assets/gallery/alert_(5).gif" alt="YCH" onclick="location.href='./gallery.html#emotes'">
+                        <div>
+                            <h3 class="globalTitle" id="commissionsTitle">YCH</h3>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Emotes</p>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Anitamed Emotes</p>
+                            <p class="globalSubtitle" id="commissionsSubtitle">PNGTubers</p>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Scenes</p>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Ilustrations</p>
+                            <p class="globalSubtitle" id="commissionsSubtitle">Chibis</p>
+                        </div>
+                    </a>
                 </div>
-            <p class="commissions__text">For more details on pricing and availability, please contact me through my social media or email.</p>
+                <p class="commissions__text">For more details on pricing and availability, please contact me through my social media or email.</p>
+            </section>
+        </section>
+        <section id="mainShop" class="commissionSection" style="display: none;" >
+            <h2 id="h2Comissions" class="globalTitle">Shops</h2>
+            <nav class="nav" id="comissionNav">
+                <a class="nav__option" id="commissionsButton" onclick="showSection('mainCommissions','commissionSection')">Digital Assets</a>
+            </nav>
         </section>
     </main> 
+    <script src="app.js"></script>
 </body>
 </html>
