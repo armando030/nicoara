@@ -49,6 +49,17 @@ html {
     margin-bottom: 20px;
 }
 
+h3{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: var(--background-color);
+    border-radius: 23px;
+    min-width: 70%;
+}
+
 .nav{
     padding: 0% 10% 3% 10%;
     display: flex;
@@ -283,14 +294,19 @@ img:broken, img:not([src]), img[src=""] {
 .commissions__list__element {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: var(--secondary-color);
     align-items: center;
-    justify-items: center;
-    align-content: center;
+    justify-items:center;
+    align-content:center;
     padding: 15px;
     border-radius: 25px;
     margin: 15px;
+    background-color: var(--secondary-color);
 }
+
+    #shopList {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
 
 .commissions__list__element div {
     display: flex;
@@ -317,7 +333,7 @@ img:broken, img:not([src]), img[src=""] {
 #commissionsTitle {
     font-size: 2rem;
     padding: 10px;
-    margin: 0px;
+    margin: 10px;
     letter-spacing: normal;
 }
 
