@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1 class="h1">NicoAra</h1>
+        <h1 class="globalTitle" id="h1">Cont<span id="main__text__title_color">act</span></h1>
         <nav class="nav">
             <a class="nav__option" href="index.html">Home</a>
             <a class="nav__option" href="about.html">About</a>
@@ -19,7 +19,133 @@
         </nav>
     </header>
     <main>
+        <div>
+            <section class="formSection"> 
+                <h2 class="globalTitle" id="about__title">Contact Me</h2>
+                <p class="globalText"></p>
+                <form class="contact__form" action="https://formspree.io/f/mayvwbjq" method="POST">
+                    <label for="name" class="globalText">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="NicoAra" required>
+                    
+                    <label for="email" class="globalText">Email:</label>
+                    <input type="email" id="email" name="_replyto" placeholder="example@nico.art" required>
 
-    </main> 
+                    <label for="subject" class="globalText">Type of commission</label>
+                    <input type="text" id="subject" name="subject" placeholder="Custom animated emote commission"  required>
+                    
+                    <label for="message" class="globalText">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <label class="globalText">
+                        <input type="checkbox" checked="checked" name="TOS"> I read and accept the 
+                        <a onclick="popUpOpen('tosSection')">terms of service</a>
+                    </label>
+
+                    <button type="submit" class="contact__form__button">Send</button>
+                </form>
+            </section>
+        </div>
+        <div id="tosSection">
+            <div id="tosContent">
+            <h2 class="globalTitle"> Terms of Service </h2>
+                <p class="globalText"> By commissioning me, you agree to the following terms and conditions.</p>
+                <h3 class="globalSubtitle">General</h3>
+                <ul>
+                    <li>The client must be 18 years or older or have a legal parent/guardian who consents to all terms of service outlined below.</li>
+                    <li>Any commissioned work or content provided to the client must not be used for Artificial Intelligence (AI), Machine Learning, or NFTs.</li>
+                    <li>I reserve the right to decline any commission request.</li>
+                    <li>Clients must provide all necessary references and information before and during the creation process.</li>
+                    <li>Reference images must be clear and detailed, allowing for an accurate review of design.</li>
+                    <li>Commissioned files will be stored on Google Drive for up to one month. It is the client’s responsibility to save and securely back up all files.</li>
+                </ul>
+                <h3 class="globalSubtitle">Payment</h3>
+                <ul>
+                    <li>Payments are processed in U.S. dollars (USD) by default. Other accepted currencies are Peruvian Soles (PEN) and Euros (EUR).</li>
+                    <li>For commissions under $200, full payment is required upfront before work begins.</li>
+                    <li>For commissions over $200, clients can choose to pay 50% upfront and 50% after the sketch is approved.
+                        Please notify me in advance if you wish to use this option.
+                        Additional fees may apply.</li>
+                        <li>Payment must be completed within 48 hours of receiving the payment request. If not received within this timeframe, the commission will be considered canceled.</li>
+                        <li>Invoices will be sent when the commission is ready to begin. Payments can be made via Stripe (preferred – no Stripe account required, credit card accepted) or PayPal.</li>
+                        <li>Payments through other platforms like Fiverr, Etsy, Ko-Fi or VGen are also accepted.</li>
+                        <li>Clients will be charged additional fees for extra work requested during the process that was not discussed or included in the initial quote.</li>
+                    </ul>
+            <h3 class="globalSubtitle">Copyright & Usage</h3>
+            <ul>
+                <li>I retain the original copyright and ownership of all commissioned work. Clients are not authorized to sell, redistribute, print, use the work for AI training, NFT creation, or claim it as their own unless otherwise agreed upon.</li>
+                <li>A commercial fee is required for any work intended for print or merchandise—whether sold or given away for free—such as product designs, advertising materials (banners, business cards, etc.), and more. If you’re unsure whether a commercial fee is needed, please ask.</li>
+                <li>Clients with a streaming (limited commercial) license can upgrade to a full commercial license by making an additional payment.</li>
+                <li>I retain the right to use commissioned works in my portfolio or on social media after their debut. If the debut date is unknown, I may share the work publicly two months after delivery unless an NDA was purchased.</li>
+                <li>I reserve the right to stream the creation process or share work-in-progress images on social media. If you prefer your commission to remain private, please inform me in advance.</li>
+                <li>I am not responsible for any copyright infringement related to materials provided by the client.</li>
+                <li>Anyone found violating the copyright or license terms will be permanently blacklisted.</li>
+            </ul>
+            <h3 class="globalSubtitle">Refunds & Cancellation</h3>
+            <ul>
+                <li>I reserve the right to cancel any commission at any time if I am unable to complete it for any reason. In such cases, a full refund will be provided.</li>
+                <li>The client is free to cancel the commission if I haven’t started working on it.</li>
+                <li>If work has already begun, a full refund is only available if I fail to deliver the project by the agreed-upon due date.</li>
+                <li>Once a commission is canceled, all related files will be permanently deleted, and the client may not keep or use any image files that were shared.</li>
+                <li>If the client cancels a commission that has already started, a cancellation fee will be charged based on the hours worked.</li>
+                <li>I retain the right to stop working with and/or refund clients who behave disrespectfully.</li>
+                <li>Refunds will be processed through PayPal and sent directly to the client’s account.</li>
+                <li>No refunds will be given once the final project files have been delivered.</li>
+            </ul>
+            <h3 class="globalSubtitle">Process & communication</h3>
+            <ul>
+                <li>The turnaround time can be arranged between 4 to 8 weeks, depending on the type and complexity of the commission. The schedule will be confirmed after reviewing the workload.</li>
+                <li>The due date will be extended by at least one day or more if the client fails to respond within 48+ hours.</li>
+                <li>Clients will receive progress updates throughout the process.</li>
+                <li>Revisions are allowed during the following three stages: Sketch, Line Art & Base Colors, and Rendering (Final). Minor edits are free up to 3 times per stage, but significant changes (e.g., altering the pose during the line art or coloring stage) will incur an additional fee.</li>
+                <li>Requirements must be clear and detailed to ensure a satisfying result.</li>
+                <li>Bad example: "The pose feels off."</li>
+                <li>Good example: "Please adjust the arm so it’s raised higher, as if waving."</li>
+            </ul>
+            <h3 class="globalSubtitle">Loyalty program</h3>
+            <ul>
+                <li>Returning clients receive priority in the queue.</li>
+                <li>Returning clients also get a 5% discount on every new order.</li>
+                <li>New clients referred by previous customers receive a 5% discount on their first order.</li>
+                <li>For every 5 referrals, you will earn a $20 coupon to use on any of my services</li>
+                <li>Coupons cannot be stacked, meaning only one coupon can be used per order.</li>
+                <li>Coupons are valid for orders above $30.</li>
+            </ul>
+            <h3 class="globalSubtitle">Rush orders</h3>
+            <ul>
+                <li>If you have a strict deadline, you can request a rush order to have your commission completed within 1–7 days.</li>
+                <li>Please confirm my availability before requesting a rush order.</li>
+                <li>Rush orders will incur an additional fee of 50% to 200% of the total price, depending on the deadline and workload.</li>
+                <li>Rush orders must be paid in full upfront.</li>
+            </ul>
+            <h3 class="globalSubtitle">Others</h3>
+            <ul>
+                <li>Reservations</li>
+                <li>You can reserve a commission slot even when commissions are closed. This requires an additional fee of at least 10% of the final quote as a deposit.</li>
+                <li>The client must complete full payment within 48 hours after receiving the reminder message when commissions reopen.</li>
+                <li>If payment is not made within 48 hours, the reservation will be considered canceled.</li>
+                <li>The deposit is non-refundable if the client decides to cancel or fails to respond.</li>
+                <li>Client Ghosting</li>
+                <li>A client will be considered to have ghosted if 14+ days pass without any message or response.</li>
+                <li>If the client informs me in advance of a reason for their absence, it will not be regarded as ghosting, and we can adjust the schedule accordingly.</li>
+                <li>The commission will be automatically canceled if the client ghosts.</li>
+                <li>Misunderstandings</li>
+                <li>Since I work with clients globally, misunderstandings can happen due to differences in background, culture, and business practices. These differences must not be imposed on one another.</li>
+                <li>If you are not fluent in English and are using a translator, please inform me in advance to avoid any confusion.</li>
+                <li>Requests such as "please mimic or trace another artist’s style" will be denied due to copyright concerns.</li>
+                <li>Please avoid sharing personal information during our communication.</li>
+                <li>A friendly attitude is always appreciated, but let's keep things within a professional, business-focused relationship</li>
+            </ul>
+            <h3 class="globalSubtitle">Dont's</h3>
+            <ul>
+                <li>NSFW</li>
+                <li>Half/Full body mecha</li>
+                <li>Excessive violence & gore</li>
+                <li>Overly offensive themes pertaining to gender, race, and religion</li>
+                <li>Lolicon/Shotacon</li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    <script src="app.js"></script> 
 </body>
 </html>
